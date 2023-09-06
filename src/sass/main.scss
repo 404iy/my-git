@@ -13,17 +13,21 @@
 *:after {
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
+
 .color1 {
   color: rgba(22, 172, 232, 1);
 }
+
 h2 {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
+
 p {
   font-family: "Open Sans", sans-serif;
 }
@@ -39,16 +43,19 @@ p {
     @media (max-width: 700px) {
     }
   }
+
   &__title {
     font-family: "Bebas Neue", sans-serif;
     font-size: 60px;
     color: #ffffff;
     letter-spacing: 5px;
   }
+
   &__text {
     color: #ffffff;
     font-size: 16px;
   }
+
   &__footer-text {
     text-align: center;
     color: #ffffff;
@@ -65,10 +72,13 @@ p {
     font-size: 12px;
     letter-spacing: 1px;
   }
+
+  n
   &__item:hover {
     color: rgba(0, 164, 229, 1);
   }
 }
+
 .br__line {
   border-bottom: 1px solid #48555b;
   width: 100%;
@@ -83,11 +93,13 @@ p {
     color: rgba(72, 85, 91, 1);
     margin-top: 50px;
   }
+
   &__element {
     border-bottom: 2px solid rgba(0, 164, 229, 1);
     width: 60px;
     margin: 20px auto;
   }
+
   &__title1 {
     width: 100%;
     max-width: 405px;
@@ -96,6 +108,7 @@ p {
     color: rgba(72, 85, 91, 1);
     padding-bottom: 30px;
   }
+
   &__text {
     width: 100%;
     max-width: 405px;
@@ -103,26 +116,31 @@ p {
     font-size: 13px;
     color: rgba(72, 85, 91, 1);
   }
+
   &__img {
     width: 100%;
     max-width: 140px;
     height: 100%;
     max-height: 224px;
   }
+
   &__capabilities {
     margin-top: 120px;
   }
+
   &__captitle {
     font-weight: 900;
     font-size: 18px;
     color: rgba(72, 85, 91, 1);
   }
+
   &__captext {
     font-size: 11px;
     width: 100%;
     max-width: 405px;
     color: rgba(72, 85, 91, 1);
   }
+
   &__btn {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
@@ -136,35 +154,41 @@ p {
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
+
   &__btn:hover {
     color: #ffffff;
     background-color: #48555b;
     transition: 0.3s linear;
   }
+
   &__capbr {
     border-bottom: 2px solid rgba(0, 164, 229, 1);
     width: 50px;
     display: block;
     margin-left: 75px;
   }
+
   &__capinfo {
     margin-top: 80px;
     display: flex;
 
     justify-content: space-around;
   }
+
   &__capinner {
     width: 100%;
     max-width: 295px;
     max-height: 330px;
     border: 1px solid rgba(230, 230, 230, 1);
   }
+
   &__infotitle {
     font-size: 16px;
     padding-top: 25px;
     padding-bottom: 15px;
     letter-spacing: 0.5px;
   }
+
   &__infotext {
     font-size: 13px;
     max-width: 250px;
@@ -187,6 +211,7 @@ p {
     font-weight: 700;
     padding-bottom: 30px;
   }
+
   &__btn {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
@@ -203,12 +228,14 @@ p {
     max-height: 40px;
     margin: 0 auto;
   }
+
   &__btn:hover {
     color: #ffffff;
     background-color: #48555b;
     transition: 0.3s linear;
   }
 }
+
 /*--------News---------*/
 .news {
   background-image: url(../img/newsletter.png);
@@ -224,17 +251,20 @@ p {
     padding-right: 70px;
     text-transform: none;
   }
+
   &__input {
     width: 100%;
     max-width: 240px;
     height: 40px;
     border: 1px solid #979797;
   }
+
   &__input::placeholder {
     color: #48555b;
     font-size: 14px;
     padding-left: 10px;
   }
+
   &__button {
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
@@ -246,6 +276,7 @@ p {
     border: 1px solid #979797;
     text-transform: uppercase;
   }
+
   &__button:hover {
     color: #ffffff;
     background-color: #48555b;
@@ -269,45 +300,55 @@ p {
     color: rgba(255, 255, 255, 1);
     padding-bottom: 20px;
   }
+
   &__text {
     font-size: 11px;
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 1);
     padding-top: 15px;
   }
+
   &__links {
     padding-top: 50px;
     padding-left: 50px;
   }
+
   &__item {
     display: block;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
     padding-bottom: 5px;
   }
+
   &__item:last-child {
     padding-bottom: 0px;
     white-space: nowrap;
   }
+
   &__links1 {
     padding: 90px 0 0px 50px;
   }
+
   &__info {
     padding: 50px 0 70px 50px;
   }
+
   &__infotext {
     font-size: 11px;
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 1);
   }
+
   &__social {
     display: flex;
     padding: 90px 0 0 30px;
   }
+
   &__icon {
     padding-left: 10px;
     fill: rgba(255, 255, 255, 1);
   }
+
   &__icon:hover {
     fill: #00a4e5;
     transition: 0.3s linear;
