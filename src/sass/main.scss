@@ -6,7 +6,36 @@
 //----------------------------------------------------//
 
 
-
 .header {
-  color: blue;
+  &__num {
+    position: absolute;
+    left: 280px;
+    right: 0;
+    top: 10px;
+    bottom: 10px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  &__text {
+    position: absolute;
+    left: 925px;
+    right: 0;
+    top: 10px;
+    bottom: 10px;
+
+    color: #ffffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+
+  &__right {
+    background-color: coral;
+  }
+}
+
+.container__header {
+  margin-left: 0;
 }
