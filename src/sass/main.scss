@@ -4,15 +4,25 @@
 @import "mixin";
 @import "variables";
 //----------------------------------------------------//
-
+a {
+  text-decoration: none;
+}
 
 .header {
+  background-image: url("../img/mainpic.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+  width: 1490px;
+  height: 1033px;
+
+
   &__num {
     position: absolute;
     left: 280px;
     right: 0;
-    top: 10px;
-    bottom: 10px;
+    top: 13px;
+    bottom: 13px;
 
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -23,8 +33,8 @@
     position: absolute;
     left: 925px;
     right: 0;
-    top: 10px;
-    bottom: 10px;
+    top: 13px;
+    bottom: 13px;
 
     color: #ffffffff;
     font-family: 'Poppins', sans-serif;
@@ -34,13 +44,36 @@
   &__right {
     background-color: #ECA30C;
     width: 100%;
+    height: 45px;
   }
 
-  &__num-right {
+  &__link {
     font-family: Poppins sans-serif;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 14px;
     color: #ffffff;
+    padding-left: 15px;
+    padding-right: 35px;
+  }
+
+  &__link:hover {
+    color: #171717;
+    transition: 0.3s linear;
+  }
+
+  &__border {
+    border-right: 1px solid rgba(255, 255, 255, 1);
+    width: 37px;
+    height: 27px;
+  }
+
+  &__icon {
+    fill: #fbfbfb;
+  }
+
+  &__icon:hover {
+    fill: #171717;
+    transition: 0.3s linear;
   }
 }
 
