@@ -111,6 +111,15 @@ a {
   &__logo-img {
     z-index: 1000;
   }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    
+    z-index: 100;
+    color: #fbfbfb;
+  }
 }
 
 .container__header {
