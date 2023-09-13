@@ -151,8 +151,9 @@ a {
   }
 
   &__sub-text-1 {
+    width: 700px;
+    margin: 0 auto;
     padding-bottom: 40px;
-    padding-top: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -202,8 +203,8 @@ a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: -220px;
+    top: -14px;
+    bottom: 0;
     z-index: 1000;
   }
 
@@ -213,4 +214,27 @@ a {
 .container__header {
   margin-left: 0;
   width: 100%;
+}
+
+//---------------------Products------------//
+.products {
+  &__wrapper {
+    margin-top: 100px;
+  }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(33, 52, 48, 1);
+    text-align: center;
+  }
+
+  &__border {
+    border-bottom: 2px solid #ECA30C;
+    width: 50px;
+    height: 5px;
+    margin: 0 auto;
+
+  }
 }
