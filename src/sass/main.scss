@@ -110,16 +110,108 @@ a {
 
   &__logo-img {
     z-index: 1000;
+    padding-right: 200px;
+  }
+
+  &__wrapper {
+    text-align: center;
+    margin-top: 120px;
   }
 
   &__title {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 34px;
-    
-    z-index: 100;
+    font-size: 32px;
+    color: #fbfbfb;
+
+  }
+
+  &__title-1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    color: #fbfbfb;
+    text-transform: uppercase;
+  }
+
+  &__border-1 {
+    border-bottom: 2px solid #ECA30C;
+    width: 107px;
+    height: 10px;
+    margin: 0 auto;
+
+  }
+
+  &__sub-text {
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 31px;
     color: #fbfbfb;
   }
+
+  &__sub-text-1 {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fbfbfb;
+    text-align: center;
+  }
+
+  &__btn-1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #ECA30C;
+    color: #fbfbfb;
+    padding: 15px 30px;
+  }
+
+  &__btn1:hover {
+    background-color: #171717;
+    color: #ECA30C;
+    transition: 0.3s linear;
+  }
+
+  &__info-num {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: #fbfbfb;
+    margin-right: 20px;
+    text-align: center;
+
+    border-bottom: 2px solid #ECA30C;
+    width: 80px;
+
+  }
+
+  &__info-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fbfbfb;
+    text-align: left;
+  }
+
+  &__info-pic {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__info-pic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+  }
+
+
 }
 
 .container__header {
