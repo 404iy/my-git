@@ -25,6 +25,7 @@ a {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: #ffffff;
+    white-space: nowrap;
   }
 
   &__text {
@@ -33,6 +34,7 @@ a {
     right: 0;
     top: 13px;
     bottom: 13px;
+    white-space: nowrap;
 
     color: #ffffffff;
     font-family: 'Poppins', sans-serif;
@@ -63,13 +65,19 @@ a {
     border-right: 1px solid rgba(255, 255, 255, 1);
     width: 37px;
     height: 27px;
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 
-  &__icon {
+  &__icon-svg {
     fill: #fbfbfb;
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 
-  &__icon:hover {
+  &__icon-svg:hover {
     fill: #171717;
     transition: 0.3s linear;
   }
