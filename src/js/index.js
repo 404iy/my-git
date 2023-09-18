@@ -11,3 +11,11 @@ if (body) {
         cYear[i].innerHTML = String(year);
     }
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.querySelector('.main-burger');
+    const navMenu = document.querySelector('.main__nav');
+
+    burgerMenu.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+    });
+});
