@@ -24,6 +24,10 @@ p {
     display: flex;
     justify-content: space-around;
 
+    @media (max-width: 576px) {
+      max-width: 40%;
+    }
+
 
   }
 
@@ -31,6 +35,12 @@ p {
     display: flex;
     align-items: center;
     gap: 200px;
+    @media (max-width: 768px) {
+      gap: 100px;
+    }
+    @media (max-width: 576px) {
+      gap: 20px;
+    }
 
   }
 
@@ -39,6 +49,13 @@ p {
     font-size: 14px;
     color: #ffffff;
     white-space: nowrap;
+
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+    @media (max-width: 576px) {
+      font-size: 6px;
+    }
   }
 
   &__text {
@@ -46,12 +63,23 @@ p {
     color: #ffffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+    @media (max-width: 576px) {
+      font-size: 6px;
+    }
   }
 
   &__right {
     background-color: #ECA30C;
     width: 100%;
     max-width: 43%;
+
+    @media (max-width: 576px) {
+      max-width: 60%;
+    }
   }
 
 
@@ -62,6 +90,12 @@ p {
     color: #ffffff;
     padding-left: 15px;
     padding-right: 25px;
+
+    @media (max-width: 768px) {
+      font-size: 10px;
+      padding-left: 0px;
+
+    }
   }
 
   &__link:hover {
@@ -74,6 +108,12 @@ p {
     width: 37px;
     height: 27px;
     @media (max-width: 1176px) {
+      display: none;
+    }
+  }
+
+  &__img-search {
+    @media (max-width: 768px) {
       display: none;
     }
   }
@@ -97,7 +137,6 @@ p {
   background-image: url("../img/mainpic.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 882px;
   background-position: center center;
 
   &__nav-link {
@@ -137,6 +176,10 @@ p {
     top: -13px;
     bottom: 0;
     max-width: 100%;
+
+    @media (max-width: 576px) {
+      max-width: 40%;
+    }
   }
 
   &__logo-img {
@@ -156,6 +199,9 @@ p {
     font-size: 32px;
     color: #fbfbfb;
 
+    @media (max-width: 576px) {
+      font-size: 30px;
+    }
   }
 
   &__title-1 {
@@ -165,6 +211,10 @@ p {
     font-size: 54px;
     color: #fbfbfb;
     text-transform: uppercase;
+
+    @media (max-width: 576px) {
+      font-size: 40px;
+    }
   }
 
   &__border-1 {
@@ -181,6 +231,9 @@ p {
     font-weight: 600;
     font-size: 31px;
     color: #fbfbfb;
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
   }
 
   &__sub-text-1 {
@@ -191,6 +244,10 @@ p {
     font-size: 15px;
     color: #fbfbfb;
     text-align: center;
+
+    @media (max-width: 576px) {
+      font-size: 8px;
+    }
   }
 
   &__btn-1 {
@@ -199,6 +256,11 @@ p {
     background-color: #ECA30C;
     color: #fbfbfb;
     padding: 15px 30px;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+      padding: 10px 15px;
+    }
   }
 
   &__btn-1:hover {
@@ -219,6 +281,15 @@ p {
     border-bottom: 2px solid #ECA30C;
     width: 80px;
 
+    @media (max-width: 768px) {
+      width: 50px;
+      font-size: 25px;
+    }
+    @media (max-width: 576px) {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+
   }
 
   &__info-text {
@@ -227,29 +298,25 @@ p {
     font-size: 20px;
     color: #fbfbfb;
     text-align: left;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+    @media (max-width: 576px) {
+      font-size: 7px;
+    }
   }
 
 
   &__info-pic {
     width: 100%;
-
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -13px;
-    bottom: 0;
-    z-index: 1000;
+    max-width: 100%;
   }
 }
-
-//-----------------Burger Menu------------------------//
 
 
 //---------------------Products------------//
 .products {
-  &__wrapper {
-    margin-top: 100px;
-  }
 
   &__title {
     font-family: 'Poppins', sans-serif;
@@ -266,10 +333,13 @@ p {
     margin: 0 auto;
   }
 
+  &__pic {
+    width: 100%;
+  }
+
   &__inner {
     width: 413px;
     height: 550px;
-
 
     box-shadow: 0 10px 25px 0 rgba(33, 52, 48, 0.08);
 
@@ -338,7 +408,7 @@ p {
   border-radius: 2px;
 }
 
-/* Стили для адаптивности */
+/* адаптив 992px */
 @media (max-width: 992px) {
   .main-burger {
     display: flex;
@@ -383,10 +453,34 @@ p {
     display: flex;
   }
 
+}
+
+/* адаптив 768px */
+@media (max-width: 768px) {
   .main__nav-link {
-    padding: 10px;
+    font-size: 9px;
+    padding: 5px;
     color: #333;
     text-decoration: none;
+  }
+  .main__nav-btn {
+    font-size: 10px;
+  }
+}
+
+/* адаптив 576px */
+@media (max-width: 576px) {
+  .main__nav {
+    gap: 3px !important;
+  }
+  .main__nav-link {
+    font-size: 5px;
+  }
+  .main__nav-btn {
+    font-size: 7px;
+  }
+  .main__nav-img {
+    display: none;
   }
 }
 
