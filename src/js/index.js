@@ -10,12 +10,14 @@ if (body) {
     for (let i = 0; i < cYear.length; i++) {
         cYear[i].innerHTML = String(year);
     }
-}
-document.addEventListener('DOMContentLoaded', function () {
-    const burgerMenu = document.querySelector('.main-burger');
-    const navMenu = document.querySelector('.main__nav');
-
-    burgerMenu.addEventListener('click', function () {
-        navMenu.classList.toggle('show');
+    const buttons = document.querySelectorAll('.products__button');
+    const text = document.querySelectorAll('.products__hidden-txt');
+    const ellipses = document.querySelectorAll('.products__ellipses');
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            text[index].classList.toggle('d-none');
+            ellipses[index].classList.toggle('d-none');
+            console.log(text[index]);
+        });
     });
-});
+}
