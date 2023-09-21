@@ -475,6 +475,9 @@ p {
 //-----------------Partners----------------//
 .partners {
   margin: 80px 0;
+  @media (max-width: 320px) {
+    margin: 0;
+  }
 
   &__wrapper {
     width: 100%;
@@ -722,5 +725,125 @@ p {
   &__info-btn:hover {
     color: rgba(255, 255, 255, 1);
   }
+}
+
+//-----------------location----------------//
+
+.location {
+  margin-top: 150px;
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 147, 104, 1);
+    text-align: center;
+  }
+
+  &__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(33, 52, 48, 1);
+    text-align: center;
+  }
+
+  &__btn-1 {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(33, 52, 48, 1);
+    width: 60px;
+    height: 40px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+
+  &__btn-1:hover {
+    background-color: rgba(236, 163, 12, 1);
+    color: #ffffff;
+    transition: 0.3s linear;
+  }
+
+  &__btn-2 {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(33, 52, 48, 1);
+    width: 90px;
+    height: 40px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__btn-2:hover {
+    background-color: rgba(236, 163, 12, 1);;
+    color: #ffffff;
+    transition: 0.3s linear;
+  }
+
+  &__btn-3 {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(33, 52, 48, 1);
+    width: 145px;
+    height: 40px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__btn-3:hover {
+    background-color: rgba(236, 163, 12, 1);;
+    color: #ffffff;
+    transition: 0.3s linear;
+  }
+
+  &__btn-4 {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(33, 52, 48, 1);
+    width: 72px;
+    height: 40px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__btn-4:hover {
+    background-color: rgba(236, 163, 12, 1);
+    color: #ffffff;
+    transition: 0.3s linear;
+  }
+
+  &__btn-5 {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(33, 52, 48, 1);
+    width: 83px;
+    height: 40px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__btn-5:hover {
+    background-color: rgba(236, 163, 12, 1);
+    color: #ffffff;
+    transition: 0.3s linear;
+  }
+
+  &__btn-6 {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(33, 52, 48, 1);
+    width: 144px;
+    height: 40px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__btn-6:hover {
+    background-color: rgba(236, 163, 12, 1);
+    color: #ffffff;
+    transition: 0.3s linear;
+  }
+
 }
 
