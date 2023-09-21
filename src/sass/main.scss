@@ -552,3 +552,175 @@ p {
   }
 }
 
+//-----------------Healing----------------//
+.healing {
+  background-image: url("../img/modelhealing.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 35px;
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(33, 52, 48, 1);
+    text-align: center;
+  }
+
+  &__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    padding-top: 60px;
+    position: relative;
+
+    @media (max-width: 1200px) {
+      gap: 50px;
+    }
+  }
+
+  &__pic {
+    max-width: 100%;
+  }
+
+  &__pic-1 {
+    position: absolute;
+    top: 22%;
+    left: 0%;
+    max-width: 100%;
+
+    @media (max-width: 1200px) {
+      top: 11%;
+      left: 21%;
+    }
+    @media (max-width: 992px) {
+      top: 11%;
+      left: 11%;
+    }
+    @media (max-width: 768px) {
+      top: 11%;
+      left: 1%;
+    }
+    @media (max-width: 576px) {
+      top: 9%;
+      left: 1%;
+      max-width: 15%;
+    }
+  }
+
+  &__inner {
+    max-width: 100%;
+    padding-left: 100px;
+
+    @media (max-width: 1200px) {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+  &__inner-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 147, 104, 1);
+  }
+
+  &__inner-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(33, 52, 48, 1);
+  }
+
+  &__border {
+    border-bottom: 2px solid #ECA30C;
+    width: 50px;
+    height: 5px;
+
+    @media (max-width: 1200px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__icon {
+    background-color: rgba(0, 147, 104, 1);
+    fill: #fbfbfb;
+    border-radius: 50%;
+    width: 18px;
+    height: 16px;
+    max-width: 100%
+  }
+
+  &__info-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(33, 52, 48, 1);
+    padding-left: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+    @media (max-width: 576px) {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  &__info-subtext {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(111, 119, 117, 1);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    width: 550px;
+    height: 136px;
+    max-width: 100%;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+
+  &__info-button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(236, 163, 12, 1);
+    height: 58px;
+    width: 160px;
+    border-radius: 5px;
+    max-width: 100%;
+
+
+    @media (max-width: 1200px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__info-button:hover {
+    background-color: #171717;
+    transition: 0.3s linear;
+    color: #fbfbfb;
+  }
+
+
+  &__info-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &__info-btn:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
