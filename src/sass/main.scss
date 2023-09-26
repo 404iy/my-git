@@ -946,7 +946,10 @@ p {
 
 //-----------------map----------------//
 .map {
-  background-image: ;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 500px;
 }
 
 
