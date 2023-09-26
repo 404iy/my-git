@@ -595,7 +595,7 @@ p {
   &__pic-1 {
     position: absolute;
     top: 22%;
-    left: 0%;
+    left: 0;
     max-width: 100%;
 
     @media (max-width: 1200px) {
@@ -883,7 +883,7 @@ p {
     max-height: 233px;
     max-width: 413px;
 
-    box-shadow: 0px 10px 25px 0px rgba(33, 52, 48, 0.08);
+    box-shadow: 0 10px 25px 0 rgba(33, 52, 48, 0.08);
     border-radius: 10px;
 
     @media (max-width: 992px) {
@@ -950,6 +950,13 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 500px;
+
+
+  &__pic {
+    position: absolute;
+    right: 56%;
+    top: 113px;
+  }
 }
 
 
