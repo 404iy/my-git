@@ -945,58 +945,26 @@ p {
 }
 
 //-----------------map----------------//
-.map {
-  background-image: url(../img/map.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 750px;
-  width: 100%;
-
-
-  &__pic {
-    position: absolute;
-    right: 53%;
-    top: 100px;
+.goal {
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(33, 52, 48, 1);
+    text-align: center;
   }
 
-  &__pic-2 {
-    position: absolute;
-    right: 53%;
-    top: 255px;
-  }
-
-  &__pic-3 {
-    position: absolute;
-    left: 619px;
-    top: 158px;
-  }
-
-  &__pic-4 {
-    position: absolute;
-    left: 621px;
-    top: 248px;
-  }
-
-  &__pic-5 {
-    position: absolute;
-    left: 620px;
-    top: 255px;
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(33, 52, 48, 1);
+    text-align: center;
+    max-width: 886px;
+    margin: 0 auto;
 
   }
 
-  &__pic-6 {
-    position: absolute;
-    left: 734px;
-    top: 237px;
-
-  }
-
-  &__pic-7 {
-    position: absolute;
-    left: 734px;
-    top: 237px;
-
-  }
 }
 
 
