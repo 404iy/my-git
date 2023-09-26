@@ -949,13 +949,20 @@ p {
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 500px;
+  height: 750px;
+  width: 100%;
 
 
   &__pic {
     position: absolute;
-    right: 56%;
-    top: 113px;
+    right: 53%;
+    top: 100px;
+  }
+
+  &__pic-2 {
+    position: absolute;
+    right: 53%;
+    top: 255px;
   }
 }
 
