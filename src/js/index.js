@@ -1,6 +1,7 @@
 import '@popperjs/core';
 import 'bootstrap';
 import './ssm';
+import Swiper from 'swiper/bundle';
 
 const body = document.getElementById('body');
 if (body) {
@@ -19,5 +20,20 @@ if (body) {
             ellipses[index].classList.toggle('d-none');
             console.log(text[index]);
         });
+    });
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 3000
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+            el: '.swiper-dots'
+        },
+        slidesPerView: 3, // По умолчанию на больших экранах показываем 3 слайда
+        spaceBetween: 0
     });
 }
