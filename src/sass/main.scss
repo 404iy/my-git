@@ -1145,16 +1145,13 @@ p {
 
 //-----------------swiper----------------//
 .swiper {
-  margin-top: 100px;
+
   width: 1304px;
   height: 323px;
+  overflow: hidden;
+  margin: 100px auto;
 }
 
-.swiper-wrapper {
-  max-width: 1304px;
-  margin: 0 auto;
-  overflow: hidden;
-}
 
 .swiper-pic {
   max-width: 100%;
