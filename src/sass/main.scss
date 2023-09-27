@@ -1146,12 +1146,21 @@ p {
 //-----------------swiper----------------//
 .swiper {
 
-  width: 1304px;
+  max-width: 1304px;
+  width: 100%;
   height: 323px;
   overflow: hidden;
   margin: 100px auto;
+
+  @media (max-width: 1300px) {
+    max-width: 750px;
+  }
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
 
 .swiper-pic {
   max-width: 100%;

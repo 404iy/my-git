@@ -33,16 +33,18 @@ if (body) {
         pagination: {
             el: '.swiper-dots'
         },
-        slidesPerView: 3, // По умолчанию на больших экранах показываем 3 слайда
-        spaceBetween: 0,
+        slidesPerView: 1,
+        spaceBetween: 20,
         breakpoints: {
-            // Для экранов шириной до 1300px, показываем 2 слайда
+
             1300: {
-                slidesPerView: 2
+                slidesPerView: 3,
+                spaceBetween: 20
             },
-            // Для экранов шириной до 768px, показываем только 1 слайд
+
             768: {
-                slidesPerView: 1
+                slidesPerView: 2,
+                spaceBetween: 20
             }
         }
     });
