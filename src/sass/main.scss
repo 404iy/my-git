@@ -1341,3 +1341,74 @@ p {
     font-size: 16px;
   }
 }
+
+//-----------------world----------------//
+.world {
+  margin-top: 100px;
+  background-image: url("../img/world-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__pic {
+    width: 100%;
+    max-width: 588px;
+    max-height: 550px;
+  }
+
+  &__right {
+    width: 100%;
+    max-width: 633px;
+    max-height: 489px;
+  }
+
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(0, 147, 104, 1);
+    font-size: 20px;
+  }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(33, 52, 48, 1);
+    font-size: 40px;
+
+  }
+
+  &__pic {
+    width: 100%;
+    max-width: 588px;
+    max-height: 550px;
+  }
+
+  &__border {
+    border-bottom: 3px solid rgba(236, 163, 12, 1);
+    height: 3px;
+    width: 62px;
+  }
+
+  &__txt {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgba(33, 52, 48, 1);
+    font-size: 16px;
+
+    width: 100%;
+    max-width: 626px;
+    max-height: 202px;
+    padding-top: 30px;
+  }
+
+  &__down-pic {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__txt {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgba(33, 52, 48, 1);
+    font-size: 16px;
+  }
+}
