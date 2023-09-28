@@ -139,6 +139,13 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 800px;
+  @media (max-width: 760px) {
+    height: 900px;
+  }
+  @media (max-width: 576px) {
+    height: 775px;
+  }
 
   &__nav-link {
     font-family: 'Poppins', sans-serif;
@@ -314,8 +321,15 @@ p {
     }
   }
 
+  &__info-img {
+    width: 100%;
+    height: 200px;
+  }
+
 
   &__info-pic {
+    position: absolute;
+    top: 0;
     width: 100%;
     max-width: 100%;
   }
@@ -1190,12 +1204,13 @@ p {
     color: rgba(33, 52, 48, 1);
     font-size: 40px;
     text-align: center;
+    padding-bottom: 30px;
   }
 
   &__wrapper {
     max-width: 100%;
     width: 385px;
-    height: 711px;
+    height: 650px;
     text-align: center;
   }
 
@@ -1205,10 +1220,14 @@ p {
 
   &__inner {
     padding-top: 30px;
+    @media (max-width: 768px) {
+      padding-top: 10px;
+    }
   }
 
   &__inner-pic {
-    max-width: 100%;
+    width: 100%;
+    max-width: 52px;
   }
 
   &__line {
@@ -1229,6 +1248,10 @@ p {
     color: rgba(111, 119, 117, 1);
     font-size: 14px;
     padding: 0 20px;
+
+    @media (max-width: 992px) {
+      padding: 0;
+    }
   }
 
   &__inner-line2 {
@@ -1237,6 +1260,42 @@ p {
     left: 20px;
     z-index: -1;
   }
+
+  &__inner-line2 {
+    max-width: 1202px;
+
+    @media (max-width: 1330px) {
+      max-width: 1070px;
+    }
+    @media (max-width: 1200px) {
+      max-width: 900px;
+    }
+    @media (max-width: 992px) {
+      max-width: 650px;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 }
 
+//-----------------transform----------------//
+.transform {
 
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgba(0, 147, 104, 1);
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(33, 52, 48, 1);
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
