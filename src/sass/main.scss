@@ -1229,7 +1229,13 @@ p {
     color: rgba(111, 119, 117, 1);
     font-size: 14px;
     padding: 0 20px;
+  }
 
+  &__inner-line2 {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    z-index: -1;
   }
 }
 
