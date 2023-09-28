@@ -1168,4 +1168,26 @@ p {
   height: 323px;
 }
 
+//-----------------social----------------//
+.social {
+  margin-top: 150px;
+
+  
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgba(0, 147, 104, 1);
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(33, 52, 48, 1);
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
 
