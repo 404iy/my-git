@@ -1380,12 +1380,20 @@ p {
     width: 100%;
     max-width: 588px;
     max-height: 550px;
+
+    @media (max-width: 520px) {
+      margin-top: 225px;
+    }
   }
 
   &__border {
     border-bottom: 3px solid rgba(236, 163, 12, 1);
     height: 3px;
     width: 62px;
+
+    @media (max-width: 992px) {
+      margin: 0 auto;
+    }
   }
 
   &__txt {
@@ -1398,6 +1406,10 @@ p {
     max-width: 626px;
     max-height: 202px;
     padding-top: 30px;
+
+    @media (max-width: 520px) {
+      margin-bottom: 190px;
+    }
   }
 
   &__down-pic {
@@ -1410,6 +1422,6 @@ p {
     font-weight: 500;
     color: rgba(33, 52, 48, 1);
     font-size: 16px;
-    
+
   }
 }
