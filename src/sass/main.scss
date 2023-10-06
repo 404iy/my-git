@@ -1780,3 +1780,63 @@ p {
   }
 }
 
+//-----------------footer----------------//
+.footer {
+  margin-top: 100px;
+  background-color: rgba(32, 40, 49, 1);
+  height: 141px;
+  @media (max-width: 992px) {
+    height: 398px;
+  }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+
+    @media (max-width: 578px) {
+      text-align: center;
+    }
+  }
+
+  &__input {
+    width: 259.66px;
+    height: 56.39px;
+    top: 44px;
+    left: 575px;
+    padding: 15px 0 16.39px 21px;
+    border-radius: 5px;
+    border: 1px rgba(221, 221, 221, 1);
+    color: rgba(221, 221, 221, 1);
+    background: linear-gradient(0deg, #DDDDDD, #DDDDDD),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+  }
+
+  &__btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    background-color: rgba(236, 163, 12, 1);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 170px;
+    height: 58px;
+    max-width: 100%;
+  }
+
+  &__btn:hover {
+    background-color: #171717;
+    transition: 0.3s linear;
+    color: #fbfbfb;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+  }
+
+}
+
