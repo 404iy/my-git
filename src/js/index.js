@@ -2,6 +2,8 @@ import '@popperjs/core';
 import 'bootstrap';
 import './ssm';
 import Swiper from 'swiper/bundle';
+import noUiSlider from 'nouislider';
+import 'nouislider/distribute/nouislider.css';
 
 const body = document.getElementById('body');
 if (body) {
@@ -11,6 +13,19 @@ if (body) {
     for (let i = 0; i < cYear.length; i++) {
         cYear[i].innerHTML = String(year);
     }
+    // Получаем элемент слайдера по его ID
+    const rangeSlider = document.getElementById('range-slider');
+
+// Добавляем обработчик события input
+    rangeSlider.addEventListener('input', function () {
+        // Получаем текущее значение слайдера
+        const sliderValue = rangeSlider.value;
+
+        // Обновляем отображаемое значение (например, в элементе с классом 'goal__info-value')
+        const displayValue = document.querySelector('.goal__info-value');
+        displayValue.textContent = sliderValue;
+    });
+
     const buttons = document.querySelectorAll('.products__button');
     const text = document.querySelectorAll('.products__hidden-txt');
     const ellipses = document.querySelectorAll('.products__ellipses');
@@ -24,7 +39,7 @@ if (body) {
     const swiper = new Swiper('.swiper', {
         loop: true,
         autoplay: {
-            delay: 3000
+            delay: 5000
         },
         navigation: {
             nextEl: '.swiper-button-next',

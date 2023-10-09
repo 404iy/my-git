@@ -121,60 +121,71 @@
 <section class="products">
     <div class="container">
         <h1 class="text-center">Our Solutions/ Products</h1>
-        <div class="row justify-content-center ">
-            <div class="col-lg-4 mb-5">
-                <div class="products__inner">
-                    <img class="products__pic " src="../img/product.png" alt="">
-                    <div class="products__txt">
-                        <p class="products__inner-text">Clear sky, alert mind</p>
-                        <h2 class="products__inner-title">Mini-SHA</h2>
-                        <p class="products__inner-sub-text">The ultimate solution to combat the negative effects of
-                            geoengineering, HAARP<span class="products__ellipses">...</span> <span
-                                    class="products__hidden-txt d-none">and 5G. With its innovative sphere harmony system,
+        <div class="swiper position-relative">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="products__inner">
+                        <img class="products__pic " src="../img/product.png" alt="">
+                        <div class="products__txt">
+                            <p class="products__inner-text">Clear sky, alert mind</p>
+                            <h2 class="products__inner-title">Mini-SHA</h2>
+                            <p class="products__inner-sub-text">The ultimate solution to combat the negative effects
+                                of
+                                geoengineering, HAARP<span class="products__ellipses">...</span> <span
+                                        class="products__hidden-txt d-none">and 5G. With its innovative sphere harmony system,
                             Mini-SHA
                             promotes a clear and alert mind by harmonizing the natural energy fields around us.</span>
-                        </p>
-                        <div class="products__button ">
-                            <p class=" products__inner-btn">Learn More</p>
+                            </p>
+                            <div class="products__button ">
+                                <p class=" products__inner-btn">Learn More</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 mb-5">
-                <div class="products__inner">
-                    <img class="products__pic " src="../img/product2.png" alt="">
-                    <div class="products__txt">
-                        <p class="products__inner-text">Find peace at home</p>
-                        <h2 class="products__inner-title">HFH</h2>
-                        <p class="products__inner-sub-text">The ultimate solution to combat the harmful effects of
-                            electrosmog, 5G, and <span class="products__ellipses">...</span> <span
-                                    class="products__hidden-txt d-none">other electromagnetic radiation in your home. With its innovative
+                <div class="swiper-slide">
+                    <div class="products__inner">
+                        <img class="products__pic " src="../img/product2.png" alt="">
+                        <div class="products__txt">
+                            <p class="products__inner-text">Find peace at home</p>
+                            <h2 class="products__inner-title">HFH</h2>
+                            <p class="products__inner-sub-text">The ultimate solution to combat the harmful effects
+                                of
+                                electrosmog, 5G, and <span class="products__ellipses">...</span> <span
+                                        class="products__hidden-txt d-none">other electromagnetic radiation in your home. With its innovative
                             human growth harmony system, HGH promotes a healthier environment, more energy, and
                             harmony in your body and mind.</span></p>
-                        <div class="products__button ">
-                            <p class="products__inner-btn">Learn More</p>
+                            <div class="products__button ">
+                                <p class="products__inner-btn">Learn More</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 mb-5">
-                <div class="products__inner">
-                    <img class="products__pic " src="../img/product3.png" alt="">
-                    <div class="products__txt">
-                        <p class="products__inner-text">Against Chemtrails, HAARP and 5G</p>
-                        <h2 class="products__inner-title">Big SHA</h2>
-                        <p class="products__inner-sub-text">The ultimate solution to counteract the harmful
-                            manipulation of the earth and <span class="products__ellipses">...</span> <span
-                                    class="products__hidden-txt d-none"> humanity through vibration manipulation. With its
+                <div class="swiper-slide">
+                    <div class="products__inner">
+                        <img class="products__pic " src="../img/product3.png" alt="">
+                        <div class="products__txt">
+                            <p class="products__inner-text">Against Chemtrails, HAARP and 5G</p>
+                            <h2 class="products__inner-title">Big SHA</h2>
+                            <p class="products__inner-sub-text">The ultimate solution to counteract the harmful
+                                manipulation of the earth and <span class="products__ellipses">...</span> <span
+                                        class="products__hidden-txt d-none"> humanity through vibration manipulation. With its
                             innovative sphere harmony system, Big-SHA aims to heal the environment and restore
                             natural frequencies for overall healing, including air, soil, water, and mother earth.</span>
-                        </p>
-                        <div class="products__button ">
-                            <p class="products__inner-btn">Learn More</p>
+                            </p>
+                            <div class="products__button ">
+                                <p class="products__inner-btn">Learn More</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
 </section>
@@ -360,8 +371,9 @@
                             Bibendum neque egestas</p>
                         <p class="goal__info-num">85%</p>
                         <div class="goal__info-bar">
-                            <div class="goal__info-progress"></div>
+                            <input type="range" min="0" max="100" step="1" value="50" class="goal__info-progress">
                         </div>
+
                         <div class="goal__info-goal d-flex justify-content-between pt-2">
                             <p class="goal__info-raised">$1,050 raised</p>
                             <p class="goal__info-target">Goal: $7,000 </p>
