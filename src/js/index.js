@@ -2,8 +2,7 @@ import '@popperjs/core';
 import 'bootstrap';
 import './ssm';
 import Swiper from 'swiper/bundle';
-import noUiSlider from 'nouislider';
-import 'nouislider/distribute/nouislider.css';
+
 
 const body = document.getElementById('body');
 if (body) {
@@ -13,29 +12,6 @@ if (body) {
     for (let i = 0; i < cYear.length; i++) {
         cYear[i].innerHTML = String(year);
     }
-    // Получаем элемент слайдера по его ID
-    const rangeSlider = document.getElementById('range-slider');
-
-// Добавляем обработчик события input
-    rangeSlider.addEventListener('input', function () {
-        // Получаем текущее значение слайдера
-        const sliderValue = rangeSlider.value;
-
-        // Обновляем отображаемое значение (например, в элементе с классом 'goal__info-value')
-        const displayValue = document.querySelector('.goal__info-value');
-        displayValue.textContent = sliderValue;
-    });
-
-    const buttons = document.querySelectorAll('.products__button');
-    const text = document.querySelectorAll('.products__hidden-txt');
-    const ellipses = document.querySelectorAll('.products__ellipses');
-    buttons.forEach((button, index) => {
-        button.addEventListener('click', () => {
-            text[index].classList.toggle('d-none');
-            ellipses[index].classList.toggle('d-none');
-            console.log(text[index]);
-        });
-    });
     const swiper = new Swiper('.swiper', {
         loop: true,
         autoplay: {
@@ -62,5 +38,34 @@ if (body) {
                 spaceBetween: 20
             }
         }
+    });
+    const slider = document.querySelector('.slider1');
+    const slider2 = document.querySelector('.slider2');
+    const slider3 = document.querySelector('.slider3');
+
+    const valueDisplay = document.querySelector('.value');
+    const valueDisplay2 = document.querySelector('.value2');
+    const valueDisplay3 = document.querySelector('.value3');
+
+    function updateSliderValue(newValue, thisSlider, valueShow) {
+        thisSlider.value = newValue;
+        valueShow.textContent = newValue + '%';
+    }
+
+    // Обработчик события "input" при изменении положения ползунка
+    slider.addEventListener('input', function () {
+        // eslint-disable-next-line no-invalid-this
+        const sliderValue = this.value;
+        updateSliderValue(sliderValue, slider, valueDisplay);
+    });
+    slider2.addEventListener('input', function () {
+        // eslint-disable-next-line no-invalid-this
+        const sliderValue = this.value;
+        updateSliderValue(sliderValue, slider2, valueDisplay2);
+    });
+    slider3.addEventListener('input', function () {
+        // eslint-disable-next-line no-invalid-this
+        const sliderValue = this.value;
+        updateSliderValue(sliderValue, slider3, valueDisplay3);
     });
 }
