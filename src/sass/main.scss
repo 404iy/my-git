@@ -61,29 +61,16 @@ a {
     letter-spacing: -.03em;
     border-radius: 12px;
     padding: 14.5px 16px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.2;
-    transition: background-color .2s ease-in-out, opacity .255s;
-  }
-
-  &__btn:hover {
-    background: #fbfbfb;
-    color: #333;
-
-  }
-
-  &__btn-svg {
-    color: #fbfbfb;
-  }
-
-  &__btn-txt {
-    font-family: 'Manrope', sans-serif;
-    color: #fff;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.2;
+    transition: background-color .2s ease-in-out, opacity .255s;
 
   }
 
+  &__btn:hover {
+    background-color: #fbfbfb;
+    color: black;
+
+  }
 }
