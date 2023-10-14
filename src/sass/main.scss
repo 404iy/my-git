@@ -6,4 +6,84 @@
 //----------------------------------------------------//
 
 
-//------------------------------------------MAIN-------------------------------------//
+//------------------------------------------header-------------------------------------//
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: #171717;
+
+  &__nav {
+    padding: 16px;
+  }
+
+  &__rus {
+    color: #fbfbfb;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__lang {
+    background-color: rgba(255, 255, 255, .16);;
+    border-radius: 400px;
+    padding: 4px;
+  }
+
+
+  &__link {
+    font-family: 'Manrope', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: all .555s;
+  }
+
+  &__link:hover {
+    color: #00adcc;
+    transition: 0.3s linear;
+  }
+
+  &__btn {
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    background-color: #00adcc;
+    color: #fff;
+    letter-spacing: -.03em;
+    border-radius: 12px;
+    padding: 14.5px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: background-color .2s ease-in-out, opacity .255s;
+  }
+
+  &__btn:hover {
+    background: #fbfbfb;
+    color: #333;
+
+  }
+
+  &__btn-svg {
+    color: #fbfbfb;
+  }
+
+  &__btn-txt {
+    font-family: 'Manrope', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+
+  }
+
+}
