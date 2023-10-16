@@ -18,4 +18,15 @@ if (body) {
         opacity = Math.min(0.55, opacity);
         header.style.backgroundColor = `rgba(0, 0, 0, ${opacity.toFixed(2)})`;
     });
+
+    let burger = document.querySelector('.header-burger');
+    burger.onclick = () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+    let menu = document.querySelector('.header__nav-bar');
+    menu.onclick = () => {
+        menu.classList.toggle('active');
+        burger.classList.toggle('active');
+    }
 }
