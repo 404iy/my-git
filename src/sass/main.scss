@@ -17,12 +17,21 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
 .header {
 
 
   &__nav {
     padding: 16px;
-    background: #171717;
+    background: rgba(0, 0, 0, 0.227);
+    position: fixed;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 1168px;
   }
 
   &__rus {
@@ -42,7 +51,7 @@ a {
   &__link {
     font-family: 'Manrope', sans-serif;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.2;
     text-decoration: none;
@@ -62,7 +71,7 @@ a {
     letter-spacing: -.03em;
     border-radius: 12px;
     padding: 14.5px 16px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.2;
     transition: background-color .2s ease-in-out, opacity .255s;
