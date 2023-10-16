@@ -333,6 +333,73 @@ a {
     color: #fbfbfb;
     transition: 0.3s linear;
   }
+
+  &__box {
+    max-width: 1176px;
+    max-height: 393px;
+    z-index: 2;
+    opacity: 1;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 173, 204, 0);
+    background-image: radial-gradient(circle at 0 100%, rgba(0, 106, 141, .77), rgba(0, 156, 184, .91) 59%, rgba(0, 176, 207, .87));
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 48px 70px;
+    position: absolute;
+    top: auto;
+    bottom: -95%;
+    left: 10px;
+    right: 10px;
+    border-radius: 16px;
+  }
+
+  &__box-pic {
+    max-width: 100%;
+  }
+
+  &__box-title {
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fbfbfb;
+    max-width: 340px;
+
+    @media (max-width: 992px) {
+      position: absolute;
+      left: 10%;
+      top: 10%;
+      max-width: 100%;
+    }
+  }
+
+  &__inner-txt {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+    max-width: 363px;
+    
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+
+  &__box-right {
+    @media (max-width: 992px) {
+      position: absolute;
+      left: 10%;
+      top: 32%;
+    }
+  }
+
+  &__box-inner {
+    padding-bottom: 40px;
+  }
+
+  &__box-inner:last-child {
+    padding-bottom: 0;
+  }
 }
 
 
