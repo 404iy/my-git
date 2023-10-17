@@ -342,12 +342,11 @@ a {
     backdrop-filter: blur(6px);
     background-color: rgba(0, 173, 204, 0);
     background-image: radial-gradient(circle at 0 100%, rgba(0, 106, 141, .77), rgba(0, 156, 184, .91) 59%, rgba(0, 176, 207, .87));
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 auto;
     padding: 48px 70px;
     position: absolute;
     top: auto;
-    bottom: -95%;
+    bottom: -75%;
     left: 10px;
     right: 10px;
     border-radius: 16px;
@@ -424,7 +423,26 @@ a {
 }
 
 
+//------------------------------------------Invest-------------------------------------//
+.invest {
+  padding-top: 150px;
+  padding-bottom: 75px;
 
+  &__title {
+    font-weight: 700;
+    font-size: 44px;
+    color: #343c4a;
+    text-align: left;
+    max-width: 390px;
+    line-height: 1;
+    padding-bottom: 24px;
+  }
 
+  &__txt {
+    font-size: 20px;
+    color: #343c4a;
+    max-width: 390px;
+  }
+}
 
 
