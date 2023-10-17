@@ -443,6 +443,12 @@ a {
     color: #343c4a;
     max-width: 390px;
   }
+
+  &__video {
+    border-radius: 15px;
+    
+    max-width: 100%;
+  }
 }
 
 
