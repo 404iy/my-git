@@ -436,19 +436,38 @@ a {
     max-width: 390px;
     line-height: 1;
     padding-bottom: 24px;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+      text-align: center;
+    }
+    @media (max-width: 400px) {
+      font-size: 35px;
+    }
   }
 
   &__txt {
     font-size: 20px;
     color: #343c4a;
     max-width: 390px;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+      text-align: center;
+      padding-bottom: 40px;
+    }
   }
 
   &__video {
     border-radius: 15px;
-    
     max-width: 100%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
   }
+
+
 }
 
 
