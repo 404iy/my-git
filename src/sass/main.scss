@@ -22,9 +22,10 @@ a {
   text-decoration: none;
 }
 
+
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1176px;
 }
 
 .header {
@@ -40,8 +41,15 @@ a {
     position: fixed;
     border-radius: 30px;
     width: 100%;
-    max-width: 1168px;
+    max-width: 1176px;
+    z-index: 4;
   }
+
+  &__wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
 
   &__rus {
     color: #fbfbfb;
@@ -161,6 +169,10 @@ a {
     justify-content: center;
     align-items: center;
   }
+  .header__nav-inner {
+    flex-direction: row;
+
+  }
 
   .header-burger.active span {
     -webkit-transform: scale(0);
@@ -223,7 +235,7 @@ a {
     position: fixed;
     z-index: -3;
     opacity: 0;
-    right: 0;
+    right: -100%;
     top: 0;
     width: 100%;
     height: auto;
@@ -260,9 +272,6 @@ a {
     transform: scale(0);
   }
 
-  .header__nav-bar {
-    display: block;
-  }
   .header__nav-bar a {
     margin: 0 0 20px 0;
   }
@@ -276,6 +285,7 @@ a {
   width: 100%;
   min-height: 960px;
   padding-top: 159px;
+  position: relative;
 
   @media (max-width: 767px) {
     background-size: 120% 110%;
@@ -346,14 +356,11 @@ a {
     padding: 48px 70px;
     position: absolute;
     top: auto;
-    bottom: -75%;
+    bottom: -10%;
     left: 10px;
     right: 10px;
     border-radius: 16px;
 
-    @media (max-width: 476px) {
-      bottom: -80%;
-    }
     @media (max-width: 426px) {
       min-height: 350px;
     }
@@ -460,14 +467,29 @@ a {
 
   &__video {
     border-radius: 15px;
-    max-width: 100%;
-
-    @media (max-width: 992px) {
-      width: 100%;
-    }
+    width: 100%;
   }
-
-
 }
 
+//------------------------------------------Sell-------------------------------------//
 
+.sell {
+  padding-top: 50px;
+
+  &__container {
+    max-width: 1176px;
+    border: 1px solid #788396;
+    border-radius: 16px;
+    padding: 4.5rem 6rem;
+    position: static;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #343c4a;
+    line-height: 1;
+    font-size: 44px;
+    font-weight: 700;
+    padding-bottom: 48px;
+  }
+}
