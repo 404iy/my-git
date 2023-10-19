@@ -475,6 +475,7 @@ a {
 
 .sell {
   padding-top: 50px;
+  padding-bottom: 90px;
 
   &__container {
     width: 100%;
@@ -640,5 +641,24 @@ a {
     color: #343c4a;
     font-weight: 700;
     font-size: 16px;
+  }
+}
+
+//------------------------------------------Income-------------------------------------//
+
+.income {
+
+
+  &__title {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__wrapper {
+    background-color: #fdfcee;
   }
 }
