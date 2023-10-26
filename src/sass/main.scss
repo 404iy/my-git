@@ -764,6 +764,10 @@ a {
     border-radius: 16px;
     padding: 4.5rem 8rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .16);
+
+    @media (max-width: 992px) {
+      padding: 4.5rem 1rem;
+    }
   }
 
   &__global {
@@ -776,6 +780,10 @@ a {
     font-weight: 700;
     padding-top: 20px;
     padding-bottom: 50px;
+
+    @media (max-width: 568px) {
+      font-size: 35px;
+    }
   }
 
   &__inner {
@@ -789,6 +797,10 @@ a {
     max-width: 100%;
     padding: 32px 16px 16px;
     text-align: center;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   &__inner-1 {
@@ -803,6 +815,10 @@ a {
     max-width: 100%;
     padding: 32px 16px 16px;
     text-align: center;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
   }
 
 
@@ -848,6 +864,10 @@ a {
     width: 100%;
     max-width: 256px;
     max-height: 79px;
+
+    @media (max-width: 992px) {
+      margin: 15px auto;
+    }
   }
 
   &__inner-wrapper-1 {
@@ -858,6 +878,10 @@ a {
     width: 100%;
     max-width: 256px;
     max-height: 79px;
+
+    @media (max-width: 992px) {
+      margin: 15px auto;
+    }
   }
 
   &__inner-txt {
