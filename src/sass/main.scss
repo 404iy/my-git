@@ -984,13 +984,24 @@ a {
 }
 
 //------------------------------------------Bali-------------------------------------//
+
+.container-large {
+  width: 100%;
+  max-width: 73.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  bottom: auto;
+}
+
 .bali {
-  padding-top: 100px;
-  z-index: -1 !important;
+  margin-top: 100px;
   background-color: #f0f4fa;
   padding-bottom: 0;
   position: sticky;
-  top: 0;
+  top: -940px;
 
   @media (max-width: 992px) {
     top: initial;
@@ -1002,16 +1013,11 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
-    z-index: -1;
-    width: 100vw;
-    height: 180vh;
-    max-width: none;
-    position: absolute;
-    top: -430px;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-
+    z-index: 2;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    display: block;
+    position: static;
     @media (max-width: 992px) {
       top: -27px;
     }
@@ -1022,8 +1028,7 @@ a {
 
   &__title {
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-top: 24px;
     font-size: 44px;
     font-weight: 700;
     line-height: 1;
@@ -1135,10 +1140,175 @@ a {
     @media (max-width: 992px) {
       width: 140%;
       overflow: visible;
-      position: relative;
+
       margin-top: -12px;
     }
   }
 }
 
+//------------------------------------------Invest-------------------------------------//
+.how-start {
+  padding-top: 100px;
+
+  &__wrapper {
+    z-index: 2;
+    background-color: #00adcc;
+    background-image: linear-gradient(35deg, #009dcc, #00adcc 50%, #01c6e9);
+    border-radius: 16px;
+    padding: 4.5rem 3rem;
+
+    @media (max-width: 576px) {
+      padding: 1.5rem 1.5rem;
+    }
+  }
+
+  &__global {
+    padding: 0 20px;
+
+    @media (max-width: 576px) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+      text-align: center;
+    }
+    @media (max-width: 576px) {
+      font-size: 27px;
+    }
+  }
+
+  &__card-1 {
+    width: 100%;
+    max-width: 688px;
+    height: 240px;
+    text-align: left;
+    border: 1px solid #61e1f2;
+    border-radius: 16px;
+    padding: 16px;
+
+    @media (max-width: 992px) {
+      max-width: none;
+      height: auto;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    padding: 16px 0 24px 0;
+    color: #fff;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+  &__btn {
+    font-family: Manrope, sans-serif;
+    font-weight: 600;
+    background-color: #343c4a;
+    color: #fff;
+    text-align: left;
+    border-radius: 16px;
+    padding: 17px 24px;
+    font-size: 18px;
+    -webkit-transition: background-color 0.2s ease-in-out, opacity 0.255s;
+    transition: background-color 0.2s ease-in-out, opacity 0.255s;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+      padding: 15px 15px;
+    }
+    @media (max-width: 576px) {
+      font-size: 14px;
+      padding: 12px 11px;
+    }
+  }
+
+  &__btn:hover {
+    background: #fbfbfb;
+    color: #050505;
+    transition: 0.3s linear;
+  }
+
+  &__svg {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  &__card-2 {
+    width: 100%;
+    max-width: 371px;
+    height: 240px;
+    text-align: left;
+    border: 1px solid #61e1f2;
+    border-radius: 16px;
+    padding: 16px;
+
+    @media (max-width: 992px) {
+      max-width: none;
+      height: auto;
+    }
+  }
+
+  &__text-2 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+  &__text-3 {
+    padding-top: 50px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+
+    @media (max-width: 992px) {
+      padding-top: 24px;
+    }
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+  &__text-4 {
+    padding-top: 80px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+
+    @media (max-width: 992px) {
+      padding-top: 24px;
+    }
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+}
 
