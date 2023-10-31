@@ -1385,12 +1385,16 @@ a {
 }
 
 .accordion-button::after {
-  background-image: url("..img/x-circle.svg");
+  background-image: url("../img/x-circle.svg");
   transform: rotate(225deg);
   width: 30px;
   height: 30px;
   background-size: 30px;
+}
 
+.accordion-button:not(.collapsed)::after {
+  background-image: url("");
+  transform: rotate(-180deg);
 }
 
 
