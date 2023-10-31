@@ -23,10 +23,10 @@ if (body) {
     burger.onclick = () => {
         burger.classList.toggle('active');
         menu.classList.toggle('active');
-    }
+    };
     let menu = document.querySelector('.header__nav-bar');
     menu.onclick = () => {
         menu.classList.toggle('active');
         burger.classList.toggle('active');
-    }
+    };
 }
