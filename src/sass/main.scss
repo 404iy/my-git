@@ -3,6 +3,7 @@
 @import "loader";
 @import "mixin";
 @import "variables";
+@import 'wowjs/css/libs/animate.css';
 //----------------------------------------------------//
 
 
@@ -464,10 +465,12 @@ a {
       padding-bottom: 40px;
     }
   }
+  
 
   &__video {
     border-radius: 15px;
     width: 100%;
+    max-width: 573px;
   }
 }
 
@@ -1657,6 +1660,14 @@ a {
   left: 0;
   right: 0;
 
+  @media (max-width: 992px) {
+    padding-top: 272px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 460px;
+  }
+
   &__title {
     font-size: 32px;
     font-weight: 700;
@@ -1681,6 +1692,10 @@ a {
     font-size: 16px;
     font-weight: 600;
     transition: all .255s;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
   }
 
   &__btn-up:hover {
@@ -1705,6 +1720,10 @@ a {
     font-size: 16px;
     font-weight: 600;
     transition: all .255s;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
   }
 
   &__btn-middle:hover {
@@ -1724,6 +1743,10 @@ a {
     border-radius: 16px;
     padding: 24px;
     transition: box-shadow .2s ease-in-out;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
   }
 
   &__button-site:hover {
@@ -1766,14 +1789,25 @@ a {
     font-weight: 500;
     transition: all .555s;
     cursor: pointer;
-    color: #fff;
+    color: #fff !important;
+
+    @media (max-width: 992px) {
+      width: 160px;
+      padding: .4rem 1rem .4rem 4.5rem;
+    }
+  }
+
+  &__icon:hover {
+    border-color: #00adcc;
+    background-color: rgba(0, 173, 204, .4);
+    transition: 0.2s linear;
   }
 
   &__icon-1 {
     width: 99px;
     border: 1px solid #969fb0;
     background-color: rgba(28, 33, 41, 0);
-    background-image: url("../img/footer-dis.svg");
+    background-image: url("../img/footer-discord.svg");
     background-position: 20%;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -1783,24 +1817,69 @@ a {
     font-weight: 500;
     transition: all .555s;
     cursor: pointer;
-    color: #fff;
+    color: #fff !important;
+
+    @media (max-width: 992px) {
+      width: 160px;
+      padding: .4rem 1rem .4rem 4.5rem;
+    }
+  }
+
+  &__icon-1:hover {
+    border-color: #00adcc;
+    background-color: rgba(0, 173, 204, .4);
+    transition: 0.2s linear;
   }
 
   &__icon-2 {
-    width: 99px;
+    width: 102px;
     border: 1px solid #969fb0;
     background-color: rgba(28, 33, 41, 0);
-    background-image: url("../img/");
-    background-position: 20%;
+    background-image: url("../img/footer-telegram.svg");
+    background-position: 9%;
     background-repeat: no-repeat;
     background-size: 20px;
     border-radius: 50px;
-    padding: .4rem 1rem .4rem 2.5rem;
+    padding: .4rem 4.5rem .4rem 2.5rem;
     font-size: 14px;
     font-weight: 500;
     transition: all .555s;
     cursor: pointer;
-    color: #fff;
+    color: #fff !important;
+
+    @media (max-width: 992px) {
+      width: 160px;
+      padding: .4rem 1rem .4rem 3.5rem;
+    }
+    @media (max-width: 768px) {
+      padding: .4rem 1rem .4rem 4.5rem;
+      background-position: 20%;
+    }
+  }
+
+  &__icon-2:hover {
+    border-color: #00adcc;
+    background-color: rgba(0, 173, 204, .4);
+    transition: 0.2s linear;
+  }
+
+  &__copyright {
+    opacity: 1;
+    color: #58667e;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 32px;
+  }
+
+  &__col {
+    @media (max-width: 992px) {
+      padding-left: 72px !important;
+      padding-right: 72px !important;
+    }
+    @media (max-width: 768px) {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+    }
   }
 }
 

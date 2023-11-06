@@ -1,6 +1,7 @@
 import '@popperjs/core';
 import 'bootstrap';
 import './ssm';
+import WOW from 'wowjs';
 
 const body = document.getElementById('body');
 if (body) {
@@ -29,4 +30,7 @@ if (body) {
         menu.classList.toggle('active');
         burger.classList.toggle('active');
     };
+    new WOW.WOW({
+        live: false
+    }).init();
 }
