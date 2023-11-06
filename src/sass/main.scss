@@ -465,7 +465,7 @@ a {
       padding-bottom: 40px;
     }
   }
-  
+
 
   &__video {
     border-radius: 15px;
@@ -563,7 +563,7 @@ a {
 
   &__svg {
     width: 100%;
-    z-index: 9999;
+    z-index: 1;
     position: absolute;
     top: 4%;
     bottom: 20%;
