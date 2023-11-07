@@ -49,18 +49,54 @@ if (body) {
         const firstName = document.querySelector('[name="first_name"]').value;
         const lastName = document.querySelector('[name="last_name"]').value;
         const email = document.querySelector('[name="email"]').value;
+        const phone = document.querySelector('[name="phone"]').value;
+        const firstNameError = document.getElementById('firstNameError');
+        const lastNameError = document.getElementById('lastNameError');
         const emailError = document.getElementById('emailError');
+        const phoneError = document.getElementById('phoneError');
 
-        if (firstName === '' || lastName === '' || email === '' || !isValidEmail(email)) {
-            emailError.style.display = 'block'; // Показать сообщение об ошибке
-            event.preventDefault(); // Предотвратить отправку формы
+        let hasErrors = false;
+
+        if (firstName === '') {
+            firstNameError.style.display = 'block';
+            hasErrors = true;
         } else {
-            emailError.style.display = 'none'; // Скрыть сообщение об ошибке, если email введен правильно
+            firstNameError.style.display = 'none';
+        }
+
+        if (lastName === '') {
+            lastNameError.style.display = 'block';
+            hasErrors = true;
+        } else {
+            lastNameError.style.display = 'none';
+        }
+
+        if (email === '' || !isValidEmail(email)) {
+            emailError.style.display = 'block';
+            hasErrors = true;
+        } else {
+            emailError.style.display = 'none';
+        }
+
+        if (phone === '' || !isValidPhone(phone)) {
+            phoneError.style.display = 'block';
+            hasErrors = true;
+        } else {
+            phoneError.style.display = 'none';
+        }
+
+        if (hasErrors) {
+            event.preventDefault();
         }
     });
 
     function isValidEmail(email) {
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
         return emailPattern.test(email);
+    }
+
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    function isValidPhone(phone) {
+        // Ваша логика валидации для номера телефона
     }
 }

@@ -1110,17 +1110,23 @@
                 <form class="text-center d-flex flex-column justify-content-center align-self-center w-100 pt-5
 " action="" method="post" id="form0">
                     <div class="form__group mb-3">
-                        <input class="form__block-input" type="text" name="first_name" placeholder="Имя" title="Имя"
-                               required>
+                        <input class="form__block-input" type="text" name="first_name" placeholder="Имя" title="Имя" required>
+                        <div id="firstNameError" class="error-message">Пожалуйста, введите имя.</div>
                     </div>
+
                     <div class="form__group mb-3">
-                        <input class="form__block-input" type="text" name="last_name" placeholder="Фамилия"
-                               title="Фамилия" required>
+                        <input class="form__block-input" type="text" name="last_name" placeholder="Фамилия" title="Фамилия" required>
+                        <div id="lastNameError" class="error-message">Пожалуйста, введите фамилию.</div>
                     </div>
+
                     <div class="form__group mb-3">
-                        <input class="form__block-input" type="text" name="last_name" placeholder="E-mail"
-                               title="E-mail" required>
+                        <input class="form__block-input" type="text" name="email" placeholder="E-mail" title="E-mail" required>
                         <div id="emailError" class="error-message">Пожалуйста, введите правильный email.</div>
+                    </div>
+
+                    <div class="form__group mb-3">
+                        <input class="form__block-input" type="text" name="phone" placeholder="Номер телефона" title="Номер телефона" required>
+                        <div id="phoneError" class="error-message">Пожалуйста, введите правильный номер телефона.</div>
                     </div>
                     <div class="form-group">
                         <div class="iti w-100 iti--allow-dropdown iti--separate-dial-code uk-width-expand">
