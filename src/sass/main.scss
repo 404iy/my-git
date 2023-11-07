@@ -27,6 +27,8 @@ a {
 .container {
   width: 100%;
   max-width: 1176px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .header {
@@ -44,6 +46,7 @@ a {
     width: 100%;
     max-width: 1176px;
     z-index: 4;
+    margin: 12px 12px;
   }
 
   &__wrapper {
@@ -1552,7 +1555,7 @@ a {
     align-items: center;
     gap: 30px;
     position: relative;
-    z-index: 100;
+    z-index: 2;
 
     @media (max-width: 992px) {
       padding: 32px;
@@ -1883,6 +1886,23 @@ a {
   }
 }
 
+@keyframes zoomInDown {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
+/* Добавьте дополнительные свойства анимации, такие как продолжительность и задержку */
+.sell__svg.zoomInDown {
+  transform-style: preserve-3d;
+  animation-name: zoomInDown;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  /* Добавьте другие свойства анимации, такие как timing function и fill mode, по вашему усмотрению */
+}
 
 

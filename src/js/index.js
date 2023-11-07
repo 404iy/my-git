@@ -33,4 +33,34 @@ if (body) {
     new WOW.WOW({
         live: false
     }).init();
+    const accordion = document.getElementById('accordionExample');
+
+    accordion.addEventListener('shown.bs.collapse', function (event) {
+        const targetElement = event.target;
+        const targetOffset = targetElement.getBoundingClientRect().top;
+        const navbarHeight = 60; // Высота навигационной панели (если есть)
+
+        window.scrollTo({
+            top: window.scrollY + targetOffset - (window.innerHeight - targetElement.clientHeight) / 2 - navbarHeight,
+            behavior: 'smooth'
+        });
+    });
+    document.getElementById('form0').addEventListener('submit', function (event) {
+        const firstName = document.querySelector('[name="first_name"]').value;
+        const lastName = document.querySelector('[name="last_name"]').value;
+        const email = document.querySelector('[name="email"]').value;
+        const emailError = document.getElementById('emailError');
+
+        if (firstName === '' || lastName === '' || email === '' || !isValidEmail(email)) {
+            emailError.style.display = 'block'; // Показать сообщение об ошибке
+            event.preventDefault(); // Предотвратить отправку формы
+        } else {
+            emailError.style.display = 'none'; // Скрыть сообщение об ошибке, если email введен правильно
+        }
+    });
+
+    function isValidEmail(email) {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailPattern.test(email);
+    }
 }
