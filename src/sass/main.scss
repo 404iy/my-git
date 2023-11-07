@@ -29,6 +29,10 @@ a {
   max-width: 1176px;
 }
 
+.padding-global {
+  padding: 0 20px;
+}
+
 .header {
   &__logo {
     @media (max-width: 576px) {
@@ -1427,7 +1431,7 @@ a {
 .faq__button {
   border: none;
   max-width: 300px;
-  min-width: 300px;
+  min-width: 250px;
   grid-column-gap: 11px;
   color: #fff;
   letter-spacing: -.03em;
