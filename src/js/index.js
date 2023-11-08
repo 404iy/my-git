@@ -7,5 +7,15 @@ if (body) {
     let today = new Date();// Вывод даты
     let year = today.getFullYear();
     let cYear = document.querySelectorAll('.cYear');
-    cYear.forEach(i => i.innerHTML = year.toString());
+    cYear.forEach((i) => i.innerHTML = year.toString());
+    let burger = document.querySelector('.header-burger');
+    burger.onclick = () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+    };
+    let menu = document.querySelector('.header__menu');
+    menu.onclick = () => {
+        menu.classList.toggle('active');
+        burger.classList.toggle('active');
+    };
 }
