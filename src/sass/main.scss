@@ -292,6 +292,71 @@ a {
   &__btn:hover {
     color: #fbfbfb !important;
   }
+}
 
+/*------Story---------*/
+.story {
+  margin-top: 87px;
 
+  &__title {
+    font-size: 57px;
+    text-align: center;
+    line-height: 81px;
+    color: rgba(86, 89, 61, 1);
+    max-width: 1196px;
+    margin: 0 auto;
+    padding-bottom: 26px;
+
+    @media (max-width: 992px) {
+      font-size: 38px;
+    }
+    @media (max-width: 576px) {
+      font-size: 25px;
+      line-height: 50px;
+    }
+  }
+
+  &__button {
+    text-transform: uppercase;
+    background-color: rgba(86, 89, 61, 1);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    display: flex;
+    padding: 15px 15px;
+    width: 100%;
+    max-width: 154px;
+
+  }
+
+  &__button:hover {
+    background-color: #85c9ff;
+    color: #171717;
+    transition: 0.2s linear;
+  }
+
+  &__btn {
+    color: rgba(255, 255, 239, 1);
+  }
+
+  &__btn:hover {
+    color: #fbfbfb !important;
+  }
+}
+
+/*------Board---------*/
+.board {
+  margin-top: 87px;
+
+  &__wrapper {
+    background: rgba(255, 255, 239, 1);
+  }
+
+  &__title {
+    color: rgba(86, 89, 61, 1);
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
 }
