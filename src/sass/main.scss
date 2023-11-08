@@ -19,6 +19,16 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 //------------------------------------------Header-------------------------------------//
 .header {
   height: 93.5px;
@@ -375,6 +385,7 @@ a {
     line-height: 25px;
     letter-spacing: 1.62px;
     color: rgba(113, 115, 83, 1);
+    padding-bottom: 81px;
   }
 }
 
@@ -420,5 +431,48 @@ a {
     @media (max-width: 576px) {
       font-size: 25px;
     }
+  }
+}
+
+/*------design---------*/
+.design {
+  margin-top: 24px;
+
+  &__wrapper {
+    background: rgba(255, 255, 239, 1);
+  }
+
+  &__right {
+    padding: 67px 87px;
+
+    @media (max-width: 576px) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-size: 29px;
+    line-height: 38px;
+    text-align: center;
+    color: rgba(86, 89, 61, 1);
+    padding-bottom: 33px;
+  }
+
+  &__border {
+    border: 1px solid #171717;
+    width: 40px;
+    margin: 0 auto;
+
+  }
+
+  &__text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    max-width: 347px;
+    padding-top: 33px;
+
   }
 }
