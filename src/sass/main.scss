@@ -664,3 +664,11 @@ p {
     }
   }
 }
+
+.board__inner {
+  transform-style: preserve-3d;
+  animation-name: BounceInLeft;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
