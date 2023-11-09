@@ -52,10 +52,12 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.0.1",
     "intl-tel-input": "^17.0.8",
     "jquery": "^3.5.1",
     "landings-core": "^2.0.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "wowjs": "^1.1.3"
   }
 }
