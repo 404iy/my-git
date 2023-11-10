@@ -18,6 +18,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -518,10 +519,15 @@ p {
   }
 
   &__border {
-    border-bottom: 1px solid rgba(86, 89, 61, 1);
+    border: none;
     width: 340px;
     margin-right: 10px;
+
+    @media (max-width: 326px) {
+      width: 150px;
+    }
   }
+
 
   &__button {
     text-transform: uppercase;
@@ -589,7 +595,7 @@ p {
   }
 }
 
-/*------FOOOTER---------*/
+/*------FOOTER---------*/
 .footer {
   margin-top: 60px;
   margin-bottom: 15px;
@@ -615,6 +621,7 @@ p {
   &__border {
     border: 1px solid rgba(255, 255, 239, 1);
     width: 40px;
+    margin: 0 auto;
 
     @media (max-width: 992px) {
       display: none;
@@ -665,10 +672,47 @@ p {
   }
 }
 
-.board__inner {
-  transform-style: preserve-3d;
-  animation-name: BounceInLeft;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
+/*------Modal---------*/
+.modal {
+  --bs-modal-header-border-width: 0 !important;
+  --bs-modal-footer-border-width: 0 !important;
+}
+
+.modal-content {
+  background: rgba(255, 255, 239, 1);
+}
+
+.modal-body {
+  margin: 0 auto;
+}
+
+.modal-text {
+  font-size: 14px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.form-control {
+  max-width: 250px;
+  border-color: black;
+}
+
+.form-control:focus {
+  border-color: #85c9ff;
+}
+
+.btn-primary {
+  color: rgba(255, 255, 239, 1);
+  background: #56593D !important;
+  border: none !important;
+  width: 150px !important;
+}
+
+.btn-primary:hover {
+  background: #fbfbfb !important;
+  color: #171717;
+}
+
+.modal-footer {
+  justify-content: center !important;
 }

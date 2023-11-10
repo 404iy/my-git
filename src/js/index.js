@@ -1,6 +1,5 @@
 import '@popperjs/core';
 import 'bootstrap';
-import './ssm';
 import WOW from 'wowjs';
 
 const body = document.getElementById('body');
