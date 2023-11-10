@@ -3,7 +3,6 @@ import 'bootstrap';
 import './ssm';
 import Swiper from 'swiper/bundle';
 
-
 const body = document.getElementById('body');
 if (body) {
     let today = new Date();// Вывод даты
@@ -12,6 +11,7 @@ if (body) {
     for (let i = 0; i < cYear.length; i++) {
         cYear[i].innerHTML = String(year);
     }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const swiper = new Swiper('.swiper', {
         loop: true,
         autoplay: {
