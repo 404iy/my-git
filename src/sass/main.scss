@@ -341,6 +341,10 @@ a {
     max-height: 65px;
     margin: 50px auto 0 auto;
 
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin: 35px auto 0 auto;
+    }
   }
 
   &__btn:hover {
@@ -361,7 +365,7 @@ a {
     padding: 48px 70px;
     position: absolute;
     top: auto;
-    bottom: -10%;
+    bottom: -12%;
     left: 10px;
     right: 10px;
     border-radius: 16px;
@@ -550,7 +554,7 @@ a {
     position: relative;
 
     @media (max-width: 408px) {
-      min-height: 760px;
+      min-height: 670px;
     }
   }
 
@@ -563,6 +567,10 @@ a {
     width: 100%;
     max-width: 445px;
     height: 220px;
+
+    @media (max-width: 992px) {
+      height: auto;
+    }
   }
 
   &__svg {
