@@ -6,64 +6,67 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="css/mixin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Document</title>
 </head>
 <body>
 <section class="main">
-    <div class="container">
-        <div class="wrapper">
-            <div class="inner">
-                <button class="button" id="openModalBtn">
-                    <a class="btn">Button</a>
-                </button>
-            </div>
-        </div>
+    <div class="wrapper">
+        <button class="main-button"
+                id="openModalBtn">
+            <a class="btn">Button</a>
+        </button>
     </div>
 </section>
 <div class="modal" id="myModal">
     <div class="modal-content">
-        <span class="close" id="closeModalBtn">&times;</span>
+        <span class="close" id="closeModalBtn"></span>
         <div class="modal-header">
-            <h2 class="header-title">Зарегистрироваться</h2>
-            <input class="header-input" type="text" name="email" placeholder="email">
-            <button class="header-button">
-                <a class="header-btn">Отправить</a>
-            </button>
+            <div class="modal-top">
+
+            </div>
+            <form class="modal-box" method="post">
+                <input id="input" class="header-input" type="text" name="email" placeholder="email">
+                <label for="input" hidden>email</label>
+                <button type="submit" class="button">
+                    <a class="header-button--text">Click</a>
+                </button>
+            </form>
         </div>
         <div class="modal-main">
             <div class="main-wrapper">
                 <div class="main-inner">
                     <div class="content"></div>
-                    <button class="main-button">
-                        <a class="main-btn">send</a>
+                    <button class="button w-50">
+                        <a class="button-text">Send</a>
                     </button>
                 </div>
                 <div class="main-inner">
                     <div class="content"></div>
-                    <button class="main-button">
-                        <a class="main-btn">send</a>
+                    <button class="button w-75">
+                        <a class="button-text">Send</a>
                     </button>
                 </div>
-                <div class="main-inner-3">
+                <div class="main-inner">
                     <div class="content"></div>
-                    <button class="main-button">
-                        <a class="main-btn">send</a>
+                    <button class="button w-65">
+                        <a class="button-text">Send</a>
                     </button>
                 </div>
-                <div class="main-inner-3">
+                <div class="main-inner">
                     <div class="content"></div>
-                    <button class="main-button">
-                        <a class="main-btn">send</a>
+                    <button class="button w-50">
+                        <a class="button-text">Send</a>
                     </button>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 
-<script src="/js/index.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
