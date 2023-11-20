@@ -1,6 +1,5 @@
 let modal = document.getElementById("myModal");
 
-// Получаем кнопку закрытия модального окна
 let closeModalBtn = document.getElementById("closeModalBtn");
 
 
