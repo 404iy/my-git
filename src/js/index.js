@@ -9,7 +9,14 @@ if (body) {
     let cYear = document.querySelectorAll('.cYear');
     cYear.forEach(i => i.innerHTML = year.toString());
 
-    document.querySelector('.burger-icon').addEventListener('click', function () {
-        document.querySelector('.burger-menu').classList.toggle('active');
-    });
+    let burger = document.querySelector('.header-burger');
+    burger.onclick = () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+    let menu = document.querySelector('.header__nav');
+    menu.onclick = () => {
+        menu.classList.toggle('active');
+        burger.classList.toggle('active');
+    }
 }
