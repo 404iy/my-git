@@ -8,4 +8,8 @@ if (body) {
     let year = today.getFullYear();
     let cYear = document.querySelectorAll('.cYear');
     cYear.forEach(i => i.innerHTML = year.toString());
+
+    document.querySelector('.burger-icon').addEventListener('click', function () {
+        document.querySelector('.burger-menu').classList.toggle('active');
+    });
 }
