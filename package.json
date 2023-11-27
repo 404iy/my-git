@@ -25,6 +25,8 @@
     "eslint-config-google": "^0.14.0",
     "eslint-webpack-plugin": "^2.4.1",
     "file-loader": "^6.2.0",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
     "html-webpack-plugin": "^5.0.0-alpha.15",
     "ignore-loader": "^0.1.2",
     "jsdom": "^18.1.1",
