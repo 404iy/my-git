@@ -1,6 +1,5 @@
 import '@popperjs/core';
 import 'bootstrap';
-import './ssm';
 import datepicker from 'js-datepicker'
 
 const body = document.getElementById('body');
