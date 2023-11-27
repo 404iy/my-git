@@ -1,6 +1,7 @@
 import '@popperjs/core';
 import 'bootstrap';
 import './ssm';
+import datepicker from 'js-datepicker'
 
 const body = document.getElementById('body');
 if (body) {
@@ -19,4 +20,8 @@ if (body) {
         menu.classList.toggle('active');
         burger.classList.toggle('active');
     }
+    const pickerInput = datepicker('#pickerInput')
+    pickerInput.hide()
+    const pickerOutput = datepicker('#pickerOutput')
+    pickerOutput.hide()
 }

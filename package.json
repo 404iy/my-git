@@ -55,6 +55,7 @@
     "bootstrap": "^5.0.1",
     "intl-tel-input": "^17.0.8",
     "jquery": "^3.5.1",
+    "js-datepicker": "^5.18.2",
     "landings-core": "^2.0.1",
     "normalize.css": "^8.0.1"
   }
