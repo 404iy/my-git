@@ -241,24 +241,33 @@ a {
 
 //------------------------------------------Main-------------------------------------//
 .main {
-  background-image: url("../img/main.png");
+  background: url("../img/main.png"), url("../img/main2.png");
   width: 100%;
   height: 100vh;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: round;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: changeBackground 10s infinite;
   @media (max-width: 992px) {
-    background-size: 105% 100%;
+    height: 80vh;
   }
-  @media (max-width: 768px) {
-    background-size: 115% 100%;
-  }
+
   @media (max-width: 576px) {
-    background-image: none;
+    background: none;
     display: block;
+    animation: none;
+  }
+  @keyframes changeBackground {
+    0%, 25% {
+      background-image: url("../img/main.png");
+    }
+
+    25%, 50% {
+      background-image: url("../img/main2.png");
+    }
   }
 
   &__container {
@@ -270,14 +279,6 @@ a {
     }
   }
 
-
-  &__vector {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
 
   &__wrapper {
     background: #fff;
@@ -334,6 +335,10 @@ a {
     }
   }
 
+  &__input:focus {
+    outline: none;
+  }
+
   &__input-num {
     width: 100%;
     height: 36px;
@@ -351,6 +356,10 @@ a {
       max-width: 260px;
       background-color: #FFFFFF;
     }
+  }
+
+  &__input-num:focus {
+    outline: none;
   }
 
   input::placeholder {
@@ -405,6 +414,7 @@ a {
     box-shadow: 0 2px 20px 0 #3f8cff;
   }
 }
+
 
 
 

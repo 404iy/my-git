@@ -19,8 +19,23 @@ if (body) {
         menu.classList.toggle('active');
         burger.classList.toggle('active');
     }
-    const pickerInput = datepicker('#pickerInput')
-    pickerInput.hide()
-    const pickerOutput = datepicker('#pickerOutput')
-    pickerOutput.hide()
+    const pickerInput = datepicker('#pickerInput', {
+        formatter: (input, date, instance) => {
+            const value = date.toLocaleDateString();
+            input.value = value;
+            return value;
+        }
+    });
+
+    pickerInput.hide();
+
+    const pickerOutput = datepicker('#pickerOutput', {
+        formatter: (input, date, instance) => {
+            const value = date.toLocaleDateString();
+            input.value = value;
+            return value;
+        }
+    });
+
+    pickerOutput.hide();
 }
