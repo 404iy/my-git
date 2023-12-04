@@ -20,22 +20,37 @@ if (body) {
         burger.classList.toggle('active');
     }
     const pickerInput = datepicker('#pickerInput', {
-        formatter: (input, date, instance) => {
+        formatter: (input, date,) => {
             const value = date.toLocaleDateString();
             input.value = value;
             return value;
         }
     });
-
     pickerInput.hide();
-
     const pickerOutput = datepicker('#pickerOutput', {
-        formatter: (input, date, instance) => {
+        formatter: (input, date,) => {
             const value = date.toLocaleDateString();
             input.value = value;
             return value;
         }
     });
-
     pickerOutput.hide();
+    document.getElementById('dropdownToggle').addEventListener('click', function () {
+        let dropdownContent = document.getElementById('dropdownContent');
+        dropdownContent.classList.toggle('show');
+    });
+    document.getElementById('dropdownToggle').addEventListener('click', function () {
+        let dropdownContent = document.getElementById('dropdownContent');
+        dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // Закрываем выпадающий список, если пользователь кликает вне его области
+    window.onclick = function (event) {
+        if (!event.target.matches('.header__link')) {
+            let dropdownContent = document.getElementById('dropdownContent');
+            if (dropdownContent.style.display === 'block') {
+                dropdownContent.style.display = 'none';
+            }
+        }
+    };
 }

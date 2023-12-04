@@ -48,7 +48,13 @@
                     </div>
                 </div>
                 <a class="header__link" href="">Главная</a>
-                <a class="header__link" href="">Номер и Цена</a>
+                <a class="header__link" href="#" id="dropdownToggle">Номер и Цена</a>
+                <div class="header__content" id="dropdownContent">
+                    <a href="#">2-Х МЕСТНЫЙ</a>
+                    <a href="#">СЕМЕЙНЫЙ</a>
+                    <a href="#">DELUXE </a>
+                    <a href="#">DELUXE+</a>
+                </div>
                 <a class="header__link" href="">Статьи</a>
                 <a class="header__link" href="">Информации</a>
                 <a class="header__link" href="">Полный пансион</a>
@@ -99,24 +105,26 @@
             <div class="main__inner">
                 <p class="main__text">Даты заезда</p>
                 <div class="main__input-group">
-                    <input class="main__input" id="pickerInput" type="text" placeholder="04-04-2021">
+                    <label for="pickerInput"></label><input class="main__input" id="pickerInput" type="text"
+                                                            placeholder="04-04-2021">
                 </div>
             </div>
             <div class="main__inner">
                 <p class="main__text">Даты выезда</p>
                 <div class="main__input-group">
-                    <input class="main__input" id="pickerOutput" type="text" placeholder="06-04-2021">
+                    <label for="pickerOutput"></label><input class="main__input" id="pickerOutput" type="text"
+                                                             placeholder="06-04-2021">
                 </div>
             </div>
             <div class="main__inner">
                 <p class="main__text">Гостей</p>
                 <div class="main__input-group">
-                    <select class="main__input-num" id="guestsSelect">
-                        <option value="1">1 гость</option>
-                        <option value="2">2 гостя</option>
-                        <option value="3">3 гостя</option>
-                        <option value="4">4 гостя</option>
-                    </select>
+                    <label for="guestsSelect"></label><select class="main__input-num" id="guestsSelect">
+                    <option value="1">1 гость</option>
+                    <option value="2">2 гостя</option>
+                    <option value="3">3 гостя</option>
+                    <option value="4">4 гостя</option>
+                </select>
                     <span class="main__input-icon">
                         <svg class="main__svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path
                                 d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></span>
@@ -124,6 +132,39 @@
             </div>
             <div class="main__inner">
                 <button class="main__button">Проверить</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="rooms">
+    <div class="container">
+        <h1 class="rooms__title">НАШИ НОМЕРА</h1>
+        <div class="rooms__wrapper pt-4 d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+            <div class="rooms__inner  position-relative">
+                <img class="rooms__img" src="../img/room1.png" alt="">
+                <div class="rooms__card">
+                    <h2 class="rooms__card-title">2-х местный</h2>
+                    <div class="rooms__inner-text">
+                        <p class="rooms__text">-Площадь номера: 11 м2</p>
+                        <p class="rooms__text">-1 двуспальная кровать или 2 односпальные кровати</p>
+                        <p class="rooms__text">-Кондиционер</p>
+                        <p class="rooms__text">-Интернет</p>
+                        <p class="rooms__text">-Телевизор</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rooms__inner  position-relative">
+                <img class="rooms__img" src="../img/room2.png" alt="">
+                <div class="rooms__card">
+                    <h2 class="rooms__card-title">Семейный</h2>
+                    <div class="rooms__inner-text">
+                        <p class="rooms__text">-Площадь номера: 18 м2</p>
+                        <p class="rooms__text">-1 двуспальная кровать или 1 односпальная кровать</p>
+                        <p class="rooms__text">-Кондиционер</p>
+                        <p class="rooms__text">-Интернет</p>
+                        <p class="rooms__text">-Телевизор</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

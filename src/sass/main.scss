@@ -60,7 +60,6 @@ a {
     line-height: 17px;
     text-align: left;
     position: relative;
-
   }
 
   &__link::before {
@@ -77,6 +76,37 @@ a {
   &__link:hover::before {
     width: 100%;
     background-color: #3F8CFF;
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-width: 160px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 #0000001A;
+    z-index: 1;
+    left: 31%;
+    top: 70%;
+    line-height: 17px;
+  }
+
+  &__content a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1E1E1E;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #0000001A;
+  }
+
+  &__content a:hover {
+    background-color: #f1f1f1;
+    color: #3F8CFF;
+    transition: 0.3s linear;
   }
 
   &__social {
@@ -415,7 +445,113 @@ a {
   }
 }
 
+//------------------------------------------Our Rooms-------------------------------------//
+.rooms {
 
+  &__title {
+    padding-top: 36px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    color: #585858;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 600px;
+    @media (max-width: 990px) {
+      max-width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  &__card {
+    background: #0000004D;
+    position: absolute;
+    top: 110px;
+    left: 23px;
+    width: 92.3%;
+    max-width: 555px;
+    height: 58%;
+
+    @media (max-width: 1222px) {
+      top: 65px;
+      width: 92.1%;
+      height: 67%;
+    }
+    @media (max-width: 990px) {
+      width: 92.7%;
+      max-width: 100%;
+      left: 35px;
+    }
+    @media (max-width: 768px) {
+      left: 27px;
+    }
+    @media (max-width: 576px) {
+      left: 23px;
+      width: 91.7%;
+      top: 15px;
+    }
+    @media (max-width: 482px) {
+      left: 19px;
+      top: 12px;
+    }
+    @media (max-width: 400px) {
+      left: 17px;
+      top: 10px;
+      width: 90.7%;
+    }
+  }
+
+  &__card-title {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    padding-top: 10px;
+  }
+
+  &__text {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: left;
+    max-width: 399px;
+    height: 17px;
+    margin-bottom: 3px;
+    @media (max-width: 990px) {
+      height: 35px;
+    }
+    @media (max-width: 768px) {
+      height: 20px;
+    }
+    @media (max-width: 576px) {
+      height: 15px;
+      font-size: 11px;
+    }
+    @media (max-width: 444px) {
+      height: 8px;
+    }
+  }
+
+  &__inner-text {
+    padding: 10px 0 28px 35px;
+    @media (max-width: 576px) {
+      padding: 0 0 0 35px;
+    }
+    @media (max-width: 444px) {
+      padding: 0 0 0 5px;
+    }
+  }
+}
 
 
 
