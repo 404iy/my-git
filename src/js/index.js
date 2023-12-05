@@ -56,13 +56,15 @@ if (body) {
     };
     document.addEventListener("DOMContentLoaded", function () {
         let mySwiper = new Swiper(".rooms__wrapper-mobile", {
-            // Настройки Swiper
-            slidesPerView: 1, // Количество отображаемых слайдов
-            spaceBetween: 20, // Расстояние между слайдами
+            slidesPerView: 1,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
         });
     });
 
