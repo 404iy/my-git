@@ -1,7 +1,7 @@
 import '@popperjs/core';
 import 'bootstrap';
 import datepicker from 'js-datepicker'
-import Swiper from 'swiper'
+import Swiper from 'swiper/bundle';
 
 const body = document.getElementById('body');
 if (body) {
