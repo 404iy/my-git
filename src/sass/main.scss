@@ -3,13 +3,14 @@
 @import "mixin";
 @import '~js-datepicker/dist/datepicker.min.css';
 @import 'picker.scss';
+@import 'swiper/swiper-bundle.min.css';
 //----------------------------------------------------//
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-  max-width: 1224px;
+  max-width: 1248px;
 }
 
 p {
@@ -289,6 +290,7 @@ a {
     background: none;
     display: block;
     animation: none;
+    height: 50vh;
   }
   @keyframes changeBackground {
     0%, 25% {
@@ -445,7 +447,7 @@ a {
   }
 }
 
-//------------------------------------------Our Rooms-------------------------------------//
+//------------------------------------------Rooms-------------------------------------//
 .rooms {
 
   &__title {
@@ -458,54 +460,40 @@ a {
   }
 
   &__inner {
-    width: 100%;
-    max-width: 600px;
-    @media (max-width: 990px) {
-      max-width: 100%;
+    position: relative;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    @media (max-width: 576px) {
+      display: none;
     }
   }
 
   &__img {
     width: 100%;
-    max-width: 100%;
-    padding: 0 5px;
+    max-width: 600px;
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
   }
 
   &__card {
     background: #0000004D;
     position: absolute;
-    top: 110px;
-    left: 23px;
-    width: 92.3%;
-    max-width: 555px;
-    height: 58%;
+    top: 132px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    max-height: 168px;
+    padding-bottom: 22px;
 
-    @media (max-width: 1222px) {
-      top: 65px;
-      width: 92.1%;
-      height: 67%;
+
+    @media (max-width: 1200px) {
+      top: 70px;
     }
-    @media (max-width: 990px) {
-      width: 92.7%;
+    @media (max-width: 992px) {
       max-width: 100%;
-      left: 35px;
-    }
-    @media (max-width: 768px) {
-      left: 27px;
-    }
-    @media (max-width: 576px) {
-      left: 23px;
-      width: 91.7%;
-      top: 15px;
-    }
-    @media (max-width: 482px) {
-      left: 19px;
-      top: 12px;
-    }
-    @media (max-width: 400px) {
-      left: 17px;
-      top: 10px;
-      width: 90.7%;
     }
   }
 
@@ -516,40 +504,85 @@ a {
     font-weight: 600;
     line-height: 29px;
     padding-top: 10px;
+    @media (max-width: 576px) {
+      color: #585858;
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+
+  &__inner-text {
+    padding: 0 0 0 35px;
   }
 
   &__text {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 600;
-    line-height: 29px;
+    line-height: 17px;
     text-align: left;
-    max-width: 399px;
-    height: 17px;
+    max-width: 433px;
     margin-bottom: 3px;
-    @media (max-width: 990px) {
-      height: 35px;
-    }
-    @media (max-width: 768px) {
-      height: 20px;
-    }
+  }
+
+  //------------------------------------------room card mobile-------------------------------------//
+
+  &__img-mobile {
+    display: none;
     @media (max-width: 576px) {
-      height: 15px;
-      font-size: 11px;
-    }
-    @media (max-width: 444px) {
-      height: 8px;
+      display: block;
+      width: 100%;
+      border-radius: 6px 6px 0 0;
     }
   }
 
-  &__inner-text {
-    padding: 10px 0 28px 35px;
+  &__card-mobile {
+    display: none;
     @media (max-width: 576px) {
-      padding: 0 0 0 35px;
+      display: block;
+      box-shadow: 0 0 6px 0 #00000040;
+      padding: 8px 0 8px 10px;
+      border-radius: 0 0 6px 6px;
     }
-    @media (max-width: 444px) {
-      padding: 0 0 0 5px;
+  }
+
+  &__text-mobile {
+    display: none;
+    @media (max-width: 576px) {
+      display: block;
+      color: #585858;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 15px;
+      text-align: left;
+      margin-bottom: 3px;
     }
+  }
+
+  &__button {
+    display: none;
+    @media (max-width: 576px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 100px;
+      margin: 21px auto 0 auto;
+      background: #FFB23F;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 15px;
+      text-align: left;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 15px;
+    }
+  }
+
+  &__button:hover {
+    background: #585858;
+    transition: 0.3s linear;
   }
 }
 

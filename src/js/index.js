@@ -1,6 +1,7 @@
 import '@popperjs/core';
 import 'bootstrap';
 import datepicker from 'js-datepicker'
+import Swiper from 'swiper'
 
 const body = document.getElementById('body');
 if (body) {
@@ -53,4 +54,16 @@ if (body) {
             }
         }
     };
+    document.addEventListener("DOMContentLoaded", function () {
+        let mySwiper = new Swiper(".rooms__wrapper-mobile", {
+            // Настройки Swiper
+            slidesPerView: 1, // Количество отображаемых слайдов
+            spaceBetween: 20, // Расстояние между слайдами
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    });
+
 }
