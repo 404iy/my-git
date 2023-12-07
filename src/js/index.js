@@ -67,5 +67,22 @@ if (body) {
             loop: true,
         });
     });
+    const leftArrow = document.getElementById('left__arrow');
+    const rightArrow = document.getElementById('right__arrow');
+    const wrapper1 = document.getElementById('about__wrapper1');
+    const wrapper2 = document.getElementById('about__wrapper2');
+
+    leftArrow.onclick = function () {
+        showWrapper(wrapper2, wrapper1);
+    };
+
+    rightArrow.onclick = function () {
+        showWrapper(wrapper1, wrapper2);
+    };
+
+    function showWrapper(showElement, hideElement) {
+        showElement.classList.remove('d-none');
+        hideElement.classList.add('d-none');
+    }
 
 }
