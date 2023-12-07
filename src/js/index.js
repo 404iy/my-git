@@ -7,7 +7,7 @@ const body = document.getElementById('body');
 if (body) {
     let today = new Date();// Вывод даты
     let year = today.getFullYear();
-    let cYear = document.querySelectorAll('.cYear');
+    let cYear = document.querySelectorAll('.year');
     cYear.forEach(i => i.innerHTML = year.toString());
 
     let burger = document.querySelector('.header-burger');
@@ -84,5 +84,11 @@ if (body) {
         showElement.classList.remove('d-none');
         hideElement.classList.add('d-none');
     }
+
+    const latitude = 37.7749
+    const longitude = -122.4139
+
+    const mapLink = document.getElementById('mapLink');
+    mapLink.href = `https://www.google.com/maps/place/${latitude},${longitude}`;
 
 }
